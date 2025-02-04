@@ -11,4 +11,4 @@ module load intel/2024a
 mpiicpx prime-mpi.cpp -o prime_mpi
 
 # mpirun -n $SLURM_NTASKS prime_mpi
-srun -n $SLURM_NTASKS prime_mpi
+srun -n $SLURM_NTASKS prime_mpi > mpi.out
