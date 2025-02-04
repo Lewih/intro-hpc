@@ -1,0 +1,8 @@
+# To request resources for interactive session (1 core)
+srun -A ap_course_hpc_intro -n 1 -c 1 -t 15:00 --pty bash
+
+# When the session starts, you can try following script (or any command you like)
+./primes.py
+
+# Don't forget to close the resource allocation when you are done
+exit

@@ -1,0 +1,5 @@
+name: bsoup4
+channels:
+  - conda-forge
+dependencies:
+  - beautifulsoup4

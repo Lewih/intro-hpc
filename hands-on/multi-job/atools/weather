@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# DO CALCULATION WITH TEMPERATURE, PRESSURE AND VOLUME AS INPUT
+
+# Process options
+while getopts "t:p:v:" opt; do
+  case ${opt} in
+    t) T=$OPTARG ;;   # Capture the value for -t (temperature)
+    p) P=$OPTARG ;;      # Capture the value for -p (pressure)
+    v) V=$OPTARG ;;        # Capture the value for -v (volume)
+    \?) echo "Usage: $0 -t <temperature> -p <pressure>" >&2
+        exit 1 ;;
+  esac
+done
+
+# Perform 'calculation'
+echo "T: $T  P: $P  V: $V"
+sleep 5

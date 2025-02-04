@@ -1,0 +1,18 @@
+#!/bin/bash
+#SBATCH --job-name=matrix_multiply    # Job name
+#SBATCH --time=00:15:00               # Max time (15 minutes)
+
+# Load necessary module (OpenMP support via GCC - in the foss toolchain)
+module purge
+module load calcua/2024a
+module load foss/2024a
+
+# Compile the program
+gcc -fopenmp matrix_multiply.c -o matrix_multiply
+
+# Parallelisation (OpenMP) parameters
+export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
+export OMP_PROC_BIND=true
+
+# Run the program
+./matrix_multiply
