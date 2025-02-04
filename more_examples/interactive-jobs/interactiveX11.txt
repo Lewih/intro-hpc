@@ -6,6 +6,7 @@ srun -A ap_course_hpc_intro -n 1 -c 1 -t 15:00 --x11 --pty bash
 ./message.py
 # If it succeeds, you'll get a message box asking you if you want to see a cow, and if you click "yes" you'll get a cow in ASCII-art in your terminal window. 
 # If the program fails to use X11 it'll just print an error message and then show the cow in ASCII art.
+xclock -update 1
 
 # Don't forget to close the resource allocation when you are done
 exit
