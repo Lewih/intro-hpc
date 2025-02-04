@@ -14,4 +14,4 @@ icpx -qopenmp prime-omp.cpp -o prime_omp
 export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
 export OMP_PROC_BIND=true
 
-./prime_omp
+./prime_omp > omp.out
