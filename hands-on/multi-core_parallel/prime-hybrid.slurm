@@ -14,4 +14,4 @@ mpiicpx -fopenmp prime-hybrid.cpp -o prime_hybrid
 export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
 export OMP_PROC_BIND=true
 
-srun -n $SLURM_NTASKS -c $OMP_NUM_THREADS prime_hybrid
+srun -n $SLURM_NTASKS -c $OMP_NUM_THREADS prime_hybrid > hybrid.out
