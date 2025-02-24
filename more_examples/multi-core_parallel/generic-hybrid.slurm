@@ -2,6 +2,7 @@
 #SBATCH --job-name hybrid_hello
 #SBATCH -A ap_course_hpc_intro
 #SBATCH --ntasks=8 --cpus-per-task=16
+#SBATCH --partition=zen2 --nodes=2
 #SBATCH --mem-per-cpu=1g
 
 module --force purge
