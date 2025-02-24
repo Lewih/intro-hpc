@@ -1,4 +1,5 @@
 [GitHub site: https://github.com/hpcuantwerpen/intro-hpc](https://github.com/hpcuantwerpen/intro-hpc)
+[CalcUA Training page: https://www.uantwerpen.be/en/research-facilities/calcua/training/](https://www.uantwerpen.be/en/research-facilities/calcua/training/)
 
 # Intro HPC
 
